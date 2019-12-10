@@ -84,7 +84,7 @@ public class OfficeController {
 			// add head office to MongoDB
 			try {
 				mDao.addOffice(o);
-				return "officePage";
+				return "officesPage";
 
 			} catch (MongoWriteException e) {
 				FacesMessage message = new FacesMessage("Error: Office ID:" + o.getOfficeId() + " already exists");
